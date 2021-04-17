@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function axlrnt_custom_form_system_site_information_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$formState) {
+
+  //changing the text of the submit button from 'save configuration' to 'update configuration'
+  $form['actions']['submit']['#value'] = t('Update Configuration');
+}

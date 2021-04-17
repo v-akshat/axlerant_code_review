@@ -1,0 +1,6 @@
+name: Axelerant Custom Module
+description: "This module adds a Site API field to site information form and enables the JSON representaiton of the node"
+package: Custom
+
+type: module
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,10 @@
+#creating a custom route to display the node in json
+axlrnt_custom.page_json:
+  path: '/page_json/{siteapikey}/{node}'
+  methods: [GET]
+  defaults:
+    _controller: 'Drupal\axlrnt_custom\Controller\PagejsonController::content'
+  requirements:
+    _permission: 'access content'
+
+
